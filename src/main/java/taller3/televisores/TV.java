@@ -36,7 +36,7 @@ public class TV {
 	}
 
 	public void setCanal(int canal) {
-		if (estado && canal >= MIN_NUMBER_CHANNEL && canal <= MIN_NUMBER_CHANNEL)
+		if (estado && canal >= MIN_NUMBER_CHANNEL && canal <= MAX_NUMBER_CHANNEL)
 			this.canal = canal;
 	}
 
@@ -84,11 +84,11 @@ public class TV {
 	}
 	
 	public void volumenUp() {
-		this.setCanal(this.getVolumen() + 1);
+		this.setVolumen(this.getVolumen() + 1);
 	}
 	
 	public void volumenDown() {
-		this.setCanal(this.getCanal() - 1);
+		this.setVolumen(this.getCanal() - 1);
 	}
 	
 	public void turnOn() {

@@ -5,6 +5,7 @@ public class Control {
 	
 	public void enlazar(TV tv) {
 		this.tv = tv;
+		tv.setControl(this);
 	}
 
 	public TV getTv() {
@@ -26,11 +27,11 @@ public class Control {
 	}
 	
 	public void volumenUp() {
-		tv.setCanal(tv.getVolumen() + 1);
+		tv.setVolumen(tv.getVolumen() + 1);
 	}
 	
 	public void volumenDown() {
-		tv.setCanal(tv.getCanal() - 1);
+		tv.setVolumen(tv.getCanal() - 1);
 	}
 	
 	public void turnOn() {
