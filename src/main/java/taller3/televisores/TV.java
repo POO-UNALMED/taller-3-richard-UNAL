@@ -8,6 +8,8 @@ public class TV {
 	private int volumen = 1;	
 	private static int numTV;
 	
+	private Control control;
+	
 
 	final int MAX_NUMBER_CHANNEL = 120;
 	final int MIN_NUMBER_CHANNEL = 1;
@@ -68,8 +70,41 @@ public class TV {
 		this.estado = estado;
 	}
 	
-	static void setNumTV(int numTV) {
+	public static void setNumTV(int numTV) {
 		TV.numTV = numTV;
+	}
+	
+	
+	public void canalUp() {
+		this.setCanal(this.getCanal() + 1);
+	}
+	
+	public void canalDown() {
+		this.setCanal(this.getCanal() - 1);
+	}
+	
+	public void volumenUp() {
+		this.setCanal(this.getVolumen() + 1);
+	}
+	
+	public void volumenDown() {
+		this.setCanal(this.getCanal() - 1);
+	}
+	
+	public void turnOn() {
+		this.setEstado(true);
+	}
+	
+	public void turnOff() {
+		this.setEstado(false);
+	}
+
+	public Control getControl() {
+		return control;
+	}
+
+	public void setControl(Control control) {
+		this.control = control;
 	}
 
 
