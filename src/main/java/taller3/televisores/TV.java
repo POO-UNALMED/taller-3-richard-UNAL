@@ -8,6 +8,7 @@ public class TV {
 	private int volumen = 1;	
 	private static int numTV;
 	
+
 	final int MAX_NUMBER_CHANNEL = 120;
 	final int MIN_NUMBER_CHANNEL = 1;
 	final int MAX_NUMBER_VOLUME = 7;
@@ -66,5 +67,10 @@ public class TV {
 	public void setEstado(boolean estado) {
 		this.estado = estado;
 	}
+	
+	static void setNumTV(int numTV) {
+		TV.numTV = numTV;
+	}
+
 
 }
