@@ -13,57 +13,57 @@ class TV {
 	final int MAX_NUMBER_VOLUME = 7;
 	final int MIN_NUMBER_VOLUME = 0;
 	
-	TV(Marca marca, boolean estado){
+	public TV(Marca marca, boolean estado){
 		this.marca = marca;
 		this.estado = estado;
 		TV.numTV++;
 		
 	}
 
-	Marca getMarca() {
+	public Marca getMarca() {
 		return marca;
 	}
 
-	void setMarca(Marca marca) {
+	public void setMarca(Marca marca) {
 		this.marca = marca;
 	}
 
-	int getCanal() {
+	public int getCanal() {
 		return canal;
 	}
 
-	void setCanal(int canal) {
+	public void setCanal(int canal) {
 		if (estado && canal >= MIN_NUMBER_CHANNEL && canal <= MIN_NUMBER_CHANNEL)
 			this.canal = canal;
 	}
 
-	int getPrecio() {
+	public int getPrecio() {
 		return precio;
 	}
 
-	void setPrecio(int precio) {
+	public void setPrecio(int precio) {
 		this.precio = precio;
 	}
 
-	int getVolumen() {
+	public int getVolumen() {
 		return volumen;
 	}
 
-	void setVolumen(int volumen) {
+	public void setVolumen(int volumen) {
 		if(estado && volumen >= MIN_NUMBER_VOLUME && volumen <= MAX_NUMBER_VOLUME)
 			this.volumen = volumen;
 	}
 
-	static int getNumTV() {
+	public static int getNumTV() {
 		return numTV;
 	}
 	
 	
-	boolean getEstado() {
+	public boolean getEstado() {
 		return estado;
 	}
 	
-	void setEstado(boolean estado) {
+	public void setEstado(boolean estado) {
 		this.estado = estado;
 	}
 
